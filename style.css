@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.sobre {
+    font-size: 110px;
+    cursor: pointer;
+    animation: flotar 2s infinite ease-in-out;
+}
+
+.sobre-icono {
+    filter: drop-shadow(0 8px 8px #a94b7040);
+}
+
+h1 {
+    color: #ad466d;
+    margin: 20px 0;
+}
+
+p {
+    color: #68404f;
+    line-height: 1.9;
+}
+
+button {
+    background: #d85b88;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.06);
+    background: #b93c6c;
+}
+
+.oculto {
+    display: none;
+}
+
+.hoja {
+    background: #fffafc;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px #a94b7033;
+    text-align: left;
+    animation: aparecer 1s ease;
+}
+
+.decoracion {
+    text-align: center;
+    color: #d85b88;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.mensaje p {
+    margin-bottom: 22px;
+    font-size: 16px;
+}
+
+.mensaje h2 {
+    color: #b94b76;
+    text-align: center;
+    font-size: 23px;
+    line-height: 1.5;
+    margin: 35px 0;
+}
+
+.final {
+    text-align: right;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+.respuesta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#sorpresa {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #fce4ec;
+    border-radius: 15px;
+}
+
+#sorpresa h2 {
+    color: #ad466d;
+    margin-bottom: 12px;
+}
+
+.corazon {
+    position: fixed;
+    bottom: -30px;
+    color: #d85b88;
+    animation: subir 7s linear forwards;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes subir {
+    to {
+        transform: translateY(-110vh) rotate(30deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hoja {
+        padding: 28px 21px;
+    }
+
+    .mensaje p {
+        font-size: 15px;
+    }
+
+    .mensaje h2 {
+        font-size: 20px;
+    }
+}

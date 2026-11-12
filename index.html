@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una pequeña sorpresa ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts" id="hearts"></div>
+
+    <main class="container">
+
+        <section id="inicio">
+            <div class="sobre" onclick="abrirCarta()">
+                <div class="sobre-icono">💌</div>
+            </div>
+
+            <h1>Una pequeña sorpresa...</h1>
+            <p>Hay algo que me gustaría contarte.</p>
+
+            <button onclick="abrirCarta()">
+                Abrir carta ❤️
+            </button>
+        </section>
+
+        <section id="carta" class="oculto">
+
+            <article class="hoja">
+
+                <div class="decoracion">♡</div>
+
+                <div class="mensaje">
+
+                    <p>Quería decirte algo que llevo pensando hace un tiempo.</p>
+
+                    <p>Desde que te conozco me has parecido una persona increíble. Me pareces muy linda y, aunque llevamos poco tiempo conociéndonos, siento que nos entendemos bastante bien. Me gusta que compartamos gustos, que podamos hablar y que poco a poco haya podido conocer más de ti.</p>
+
+                    <p>Me he dado cuenta de la gran mujer que eres y, sinceramente, me gustaría tener la oportunidad de conocerte de una manera diferente, intentar algo que vaya más allá de una amistad.</p>
+
+                    <p>No sé si tú hayas llegado a pensar lo mismo o si alguna vez has considerado esa posibilidad, pero quería ser sincero contigo.</p>
+
+                    <p>También quiero que sepas que me da un poquito de miedo que esto pueda cambiar lo bonito que ya tenemos, porque valoro mucho tu amistad. Pero pensé que sería peor quedarme con la duda por no atreverme a decirte lo que siento.</p>
+
+                    <p>No sé qué pueda pasar después de esto, pero sí sé que me gustaría descubrirlo contigo.</p>
+
+                    <p>No espero que tengas una respuesta perfecta ni quiero apresurar las cosas. Simplemente quería atreverme a decirte que me gustaría intentarlo contigo.</p>
+
+                    <h2>¿Y si nos damos la oportunidad de descubrir qué podría nacer entre nosotros? ❤️</h2>
+
+                    <p>Y si no sientes lo mismo, está bien, de verdad. Perdón si esto te incomoda o te toma por sorpresa, nunca ha sido mi intención hacerte sentir así. Valoro mucho la amistad que tenemos y no quisiera que esto cambiara las cosas entre nosotros.</p>
+
+                </div>
+
+                <div class="final">
+                    <p>Con cariño. ❤️</p>
+                </div>
+
+                <div class="respuesta">
+                    <button onclick="mostrarRespuesta()">
+                        Tengo algo que decirte 💗
+                    </button>
+                </div>
+
+                <div id="sorpresa" class="oculto">
+                    <h2>Gracias por leer hasta aquí ❤️</h2>
+                    <p>Sea cual sea tu respuesta, gracias por permitirme conocerte.</p>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
